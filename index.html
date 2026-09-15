@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BFG • Promoções</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="shield">🛡️</div>
+    <div><strong>BATALHÃO DE FORÇAS DA GUERRA</strong><span>BFG • DIVISÃO ROBLOX</span></div>
+  </div>
+  <button class="bell">🔔 <b>3</b></button>
+</header>
+<div class="layout">
+<aside class="sidebar">
+  <div class="search">🔎 Buscar usuário...</div>
+  <p class="section">PRINCIPAL</p>
+  <a>⌂ <span>Home</span></a>
+  <a class="active">↑ <span>Promover / Rebaixar</span></a>
+  <a>◷ <span>CDP</span></a>
+  <p class="section">CONSULTA</p>
+  <a>♜ <span>Hierarquia</span></a>
+  <a>▤ <span>Histórico</span></a>
+  <a>🏆 <span>Ranking</span></a>
+  <p class="section">BFG</p>
+  <a>⚙ <span>Regulamento</span></a>
+  <a>💬 <span>Discord</span></a>
+</aside>
+<main>
+  <div class="title-row">
+    <p class="eyebrow">GESTÃO DE PATENTES • BFG</p>
+    <h1>PROMOVER <i>/ REBAIXAR</i></h1>
+    <p class="muted">Busque um jogador do Roblox e gerencie sua patente no Batalhão de Forças da Guerra.</p>
+  </div>
+  <section class="card intro">
+    <p class="eyebrow">PROMOVER</p>
+    <h2>Quem você vai promover hoje?</h2>
+    <p class="muted">Selecione o membro, confira a patente atual e registre a promoção.</p>
+  </section>
+  <section class="card search-card">
+    <label>USUÁRIO DO ROBLOX</label>
+    <div class="searchbox">
+      <input id="username" placeholder="Digite o username do Roblox">
+      <button onclick="buscar()">Buscar</button>
+    </div>
+  </section>
+  <section id="result" class="card result hidden">
+    <div class="profile">
+      <div class="avatar">👤</div>
+      <div>
+        <h2 id="player">Jogador</h2>
+        <p class="muted">Batalhão de Forças da Guerra • BFG</p>
+        <span class="rank" id="currentRank">Soldado</span>
+      </div>
+    </div>
+    <div class="promotion">
+      <div><label>PRÓXIMA PATENTE</label><select id="nextRank">
+        <option>Cabo</option><option>3º Sargento</option><option>2º Sargento</option>
+        <option>1º Sargento</option><option>Subtenente</option><option>Aspirante</option><option>Tenente</option>
+      </select></div>
+      <div><label>MOTIVO</label><input id="reason" placeholder="Ex.: ótimo desempenho no treinamento"></div>
+      <button class="promote" onclick="promover()">🎖️ Confirmar promoção</button>
+    </div>
+    <p id="status"></p>
+  </section>
+  <section class="card history">
+    <div class="row-between"><h2>Últimas promoções</h2><span class="muted">Histórico BFG</span></div>
+    <div class="item"><div class="mini">👤</div><div><b>ExemploJogador</b><p class="muted">Soldado → Cabo • hoje</p></div><span class="ok">PROMOVIDO</span></div>
+    <div class="item"><div class="mini">👤</div><div><b>OperadorBFG</b><p class="muted">Cabo → 3º Sargento • ontem</p></div><span class="ok">PROMOVIDO</span></div>
+  </section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
